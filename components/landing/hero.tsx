@@ -2,16 +2,10 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { CheckCircle2, Shield, Award, FileCheck, ArrowRight, ArrowLeft } from "lucide-react"
+import { CheckCircle2, ArrowRight, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
-
-const badges = [
-  { icon: Shield, label: "Licensed" },
-  { icon: Award, label: "Bonded" },
-  { icon: FileCheck, label: "Insured" },
-]
 
 const projectOptions = ["Turf", "Pavers", "Plants", "Decorative Rock", "Drip Irrigation"]
 
@@ -216,24 +210,11 @@ export function Hero() {
             <div className="text-primary-foreground lg:col-span-3">
               <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-balance">
                 Stop Looking at That Ugly Backyard!{" "}
-                <span className="text-accent">Fix it for $9,500 Flat.</span>
+                <span className="text-accent">Fix it for $6,500 Flat.</span>
               </h1>
               <p className="mt-6 text-lg md:text-xl opacity-90 leading-relaxed max-w-xl">
                 No more, no less. See if your project fits the scope.
               </p>
-
-              {/* Trust Badges */}
-              <div className="mt-8 flex flex-wrap gap-4">
-                {badges.map(({ icon: Icon, label }) => (
-                  <div
-                    key={label}
-                    className="flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2"
-                  >
-                    <Icon className="h-5 w-5 text-accent" />
-                    <span className="text-sm font-medium">{label}</span>
-                  </div>
-                ))}
-              </div>
 
               {/* Stats */}
               <div className="mt-8 grid grid-cols-3 gap-4">
@@ -264,7 +245,7 @@ export function Hero() {
                 {/* Form Header */}
                 <div className="text-center mb-5">
                   <p className="font-[family-name:var(--font-poppins)] text-base md:text-lg font-extrabold text-foreground tracking-wide uppercase mb-2">
-                    GET A BACKYARD MAKE OVER. FINAL PRICE? $9,500.
+                    GET A BACKYARD MAKE OVER. FINAL PRICE? $6,500.
                   </p>
                   <h2 className="font-[family-name:var(--font-poppins)] text-lg font-bold text-foreground">
                     <span className="text-accent">Not Every Home Qualifies.</span> Yours Might.

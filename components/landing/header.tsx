@@ -40,9 +40,10 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="relative z-10 text-lg font-semibold tracking-tight text-primary sm:text-xl"
+            className="relative z-10 font-[family-name:var(--font-work-sans)] text-lg font-medium leading-none tracking-tight text-white sm:text-xl"
           >
-            Phoenix Pavers & Turf
+            <span className="block">PHOENIX PAVERS</span>
+            <span className="block">&amp; TURF</span>
           </Link>
 
           {/* Desktop Navigation */}

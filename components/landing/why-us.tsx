@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Award, Clock, Shield } from "lucide-react"
+import { Award, Clock } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const reasons = [
@@ -12,10 +12,6 @@ const reasons = [
   {
     icon: Clock,
     title: "Fast, On-Time Installs",
-  },
-  {
-    icon: Shield,
-    title: "Licensed & Insured",
   },
 ]
 
