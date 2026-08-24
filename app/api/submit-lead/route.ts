@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     // Send to both webhooks in parallel from server-side (no CORS issues)
     const results = await Promise.allSettled([
       // GoHighLevel webhook
-      fetch("https://services.leadconnectorhq.com/hooks/rDrIW6TO5WawA7pvJ58H/webhook-trigger/dd615aff-2187-4617-b378-cb0863e01e2e", {
+      fetch("https://services.leadconnectorhq.com/hooks/XucZS735rmKlbQTCy59O/webhook-trigger/6a565c5b-9b4a-41c0-9fef-65d497a92e03", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
