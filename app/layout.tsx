@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Montserrat, Playfair_Display, Poppins } from 'next/font/google'
+import { Montserrat, Playfair_Display, Poppins, Work_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import './globals.css'
@@ -18,6 +18,11 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: '--font-poppins'
+});
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: '--font-work-sans'
 });
 
 export const metadata: Metadata = {
@@ -76,7 +81,7 @@ export default function RootLayout({
           />
         </noscript>
       </head>
-      <body className={`${montserrat.variable} ${playfair.variable} ${poppins.variable} font-sans antialiased`}>
+      <body className={`${montserrat.variable} ${playfair.variable} ${poppins.variable} ${workSans.variable} font-sans antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
