@@ -40,7 +40,10 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="relative z-10 font-[family-name:var(--font-work-sans)] text-lg font-medium leading-none tracking-tight text-white sm:text-xl"
+            className={cn(
+              "relative z-10 font-[family-name:var(--font-work-sans)] text-lg font-medium leading-none tracking-tight transition-colors duration-300 sm:text-xl",
+              isScrolled ? "text-foreground" : "text-white"
+            )}
           >
             <span className="block">PHOENIX PAVERS</span>
             <span className="block">&amp; TURF</span>
