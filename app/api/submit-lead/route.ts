@@ -12,45 +12,24 @@ export async function POST(request: Request) {
       timestamp: new Date().toISOString(),
     }
 
-    // Send to both webhooks in parallel from server-side (no CORS issues)
-    const results = await Promise.allSettled([
-      // GoHighLevel webhook
-      fetch("https://services.leadconnectorhq.com/hooks/XucZS735rmKlbQTCy59O/webhook-trigger/6a565c5b-9b4a-41c0-9fef-65d497a92e03", {
+    // Send to GoHighLevel webhook (server-side, no CORS issues)
+    const res = await fetch(
+      "https://services.leadconnectorhq.com/hooks/XucZS735rmKlbQTCy59O/webhook-trigger/6a565c5b-9b4a-41c0-9fef-65d497a92e03",
+      {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(dataWithTimestamp),
-      }).then(async (res) => {
-        const text = await res.text().catch(() => "")
-        console.log("[v0] GoHighLevel response:", res.status, text)
-        return { status: res.status, body: text }
-      }),
-      
-      // Zapier webhook
-      fetch("https://hooks.zapier.com/hooks/catch/24750736/4y2k7sq/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(dataWithTimestamp),
-      }).then(async (res) => {
-        const text = await res.text().catch(() => "")
-        console.log("[v0] Zapier response:", res.status, text)
-        return { status: res.status, body: text }
-      }),
-    ])
+      }
+    )
 
-    console.log("[v0] Webhook results:", results)
-
-    // Check results
-    const ghlResult = results[0]
-    const zapierResult = results[1]
+    const text = await res.text().catch(() => "")
+    console.log("[v0] GoHighLevel response:", res.status, text)
 
     return NextResponse.json({
       success: true,
-      ghl: ghlResult.status === "fulfilled" ? ghlResult.value : { error: ghlResult.reason?.message },
-      zapier: zapierResult.status === "fulfilled" ? zapierResult.value : { error: zapierResult.reason?.message },
+      ghl: { status: res.status, body: text },
     })
   } catch (error) {
     console.error("[v0] API route error:", error)
