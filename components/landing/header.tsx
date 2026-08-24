@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -39,15 +38,11 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="relative z-10">
-            <Image
-              src="/images/logo.png"
-              alt="5th Element Outdoor Creations"
-              width={180}
-              height={60}
-              className="h-14 w-auto"
-              priority
-            />
+          <Link
+            href="/"
+            className="relative z-10 text-lg font-semibold tracking-tight text-primary sm:text-xl"
+          >
+            Phoenix Pavers & Turf
           </Link>
 
           {/* Desktop Navigation */}
