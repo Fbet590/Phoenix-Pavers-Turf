@@ -45,8 +45,6 @@ export function Header() {
               isScrolled ? "text-foreground" : "text-white"
             )}
           >
-            <span className="block">PHOENIX PAVERS</span>
-            <span className="block">&amp; TURF</span>
           </Link>
 
           {/* Desktop Navigation */}
