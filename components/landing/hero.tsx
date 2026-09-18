@@ -243,9 +243,6 @@ export function Hero() {
               <div className="relative">
                 {/* Form Header */}
                 <div className="text-center mb-5">
-                  <p className="font-[family-name:var(--font-poppins)] text-base md:text-lg font-extrabold text-foreground tracking-wide uppercase mb-2">
-                    GET A BACKYARD MAKE OVER. FINAL PRICE? $8,500.
-                  </p>
                   <h2 className="font-[family-name:var(--font-poppins)] text-lg font-bold text-foreground">
                     <span className="text-accent">Not Every Home Qualifies.</span> Yours Might.
                   </h2>
