@@ -14,7 +14,7 @@ export async function POST(request: Request) {
 
     // Send to GoHighLevel webhook (server-side, no CORS issues)
     const res = await fetch(
-      "https://services.leadconnectorhq.com/hooks/rDrIW6TO5WawA7pvJ58H/webhook-trigger/e588b77f-a13e-4d94-a6ad-29d7833a94a4",
+      "https://services.leadconnectorhq.com/hooks/rDrIW6TO5WawA7pvJ58H/webhook-trigger/a8ce3f5d-ad0f-4ca7-8e49-715a2cba62b0",
       {
         method: "POST",
         headers: {
