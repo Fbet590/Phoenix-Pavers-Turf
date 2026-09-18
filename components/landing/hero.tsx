@@ -221,7 +221,7 @@ export function Hero() {
                 Stop Looking at That Ugly Backyard!
               </h1>
               <p className="mt-6 text-lg md:text-xl opacity-90 leading-relaxed max-w-xl">
-                No more, no less. See if your project fits the scope.
+                See if your project fits the scope.
               </p>
 
               {/* Stats */}
