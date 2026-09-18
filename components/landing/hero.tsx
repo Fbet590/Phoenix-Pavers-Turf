@@ -7,7 +7,16 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
 
-const projectOptions = ["Turf", "Pavers", "Plants", "Decorative Rock", "Drip Irrigation"]
+const projectOptions = [
+  "Turf",
+  "Pavers",
+  "Plants",
+  "Decorative Rock",
+  "Drip Irrigation",
+  "Pergola / Patio Cover",
+  "Outdoor Kitchen",
+  "Fire / Water Feature",
+]
 
 const formSteps = [
   { field: "options", label: "What options would you like for your project?", placeholder: "", type: "options" },
