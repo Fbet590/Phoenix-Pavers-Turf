@@ -250,7 +250,7 @@ export function Hero() {
                     <span className="text-accent">Not Every Home Qualifies.</span> Yours Might.
                   </h2>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    Fill out the form below and find out if your space is a fit for our $8.5k flat rate package.
+                    Fill out the form below and find out if your space is a fit.
                   </p>
                 </div>
 
