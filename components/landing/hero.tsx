@@ -220,9 +220,12 @@ export function Hero() {
               <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl text-[48px] font-bold leading-tight text-balance">
                 Upgrade your space.
               </h1>
-              <p className="mt-6 text-lg md:text-xl opacity-90 leading-relaxed max-w-xl">
+              <button
+                type="button"
+                className="mt-6 inline-flex items-center rounded-full bg-white px-6 py-3 text-base md:text-lg font-semibold text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
+              >
                 Choose the Options you&apos;re looking for
-              </p>
+              </button>
 
               {/* Stats */}
               <div className="mt-8 grid grid-cols-3 gap-4">
