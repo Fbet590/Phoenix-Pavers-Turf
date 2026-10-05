@@ -224,7 +224,7 @@ export function Hero() {
                 type="button"
                 className="mt-6 inline-flex items-center rounded-full bg-white px-6 py-3 text-base md:text-lg font-semibold text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
               >
-                Choose the Options you&apos;re looking for
+                Choose Your Options
               </button>
 
               {/* Stats */}
