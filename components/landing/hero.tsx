@@ -217,12 +217,17 @@ export function Hero() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             {/* Left Content */}
             <div className="text-primary-foreground lg:col-span-3">
-              <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl text-[48px] font-bold leading-tight text-balance">
-                Upgrade your space.
+              <h1 className="-mt-4 lg:-mt-8 font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl text-[48px] font-bold leading-tight text-balance">
+                Upgrade <span className="font-normal">your space</span>.
               </h1>
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/The%20Better%20Life%20Way%20Orange%20Blob%20Logo-Fwyp1vFTv8cfa0bZVNbkgUbTsatho8.png"
+                alt="The Better Life Way"
+                className="mt-4 h-16 md:h-20 w-auto"
+              />
               <button
                 type="button"
-                className="mt-6 inline-flex items-center rounded-full bg-white px-6 py-3 text-base md:text-lg font-semibold text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
+                className="mt-4 inline-flex items-center rounded-full bg-white px-6 py-3 text-base md:text-lg font-semibold text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
               >
                 Choose Your Options
               </button>
