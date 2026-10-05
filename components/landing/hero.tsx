@@ -227,6 +227,9 @@ export function Hero() {
   />
   <button
   type="button"
+  onClick={() => {
+    document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }}
   className="mt-2 inline-flex items-center justify-center bg-[url('/images/yellow-banner-button.png')] bg-contain bg-center bg-no-repeat px-10 py-7 text-[20px] font-bold font-[family-name:var(--font-manrope)] text-black leading-relaxed transition-opacity hover:opacity-90"
   >
   CHOOSE YOUR OPTIONS
@@ -253,7 +256,7 @@ export function Hero() {
       </div>
 
       {/* Lead Capture Form - Overlapping */}
-      <div className="relative z-20 -mt-24 lg:-mt-32 pb-12">
+      <div id="lead-form" className="relative z-20 -mt-24 lg:-mt-32 pb-12">
         <div className="container mx-auto px-4">
           <div className="bg-card rounded-xl shadow-2xl p-5 md:p-6 max-w-sm mx-auto border border-border/50 overflow-hidden">
             {!isSubmitted ? (
