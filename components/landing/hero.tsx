@@ -233,9 +233,9 @@ export function Hero() {
               className="group relative mt-4 inline-block transition-transform hover:-translate-y-0.5"
             >
               {/* Shadow layer */}
-              <span className="absolute left-1.5 top-1.5 h-full w-full rounded-sm bg-black" aria-hidden="true" />
+              <span className="absolute left-1.5 top-1.5 h-full w-full bg-black" aria-hidden="true" />
               {/* Face layer */}
-              <span className="relative flex items-center justify-center whitespace-nowrap rounded-sm border-2 border-black bg-[#FFCE1C] px-8 py-5 text-sm font-bold font-[family-name:var(--font-manrope)] leading-relaxed text-black md:px-10 md:py-7 md:text-[20px]">
+              <span className="relative flex items-center justify-center whitespace-nowrap border-2 border-black bg-[#FFCE1C] px-8 py-2 text-sm font-bold font-[family-name:var(--font-manrope)] leading-relaxed text-black md:px-10 md:py-2.5 md:text-[20px]">
                 CHOOSE YOUR OPTIONS
               </span>
   </button>
