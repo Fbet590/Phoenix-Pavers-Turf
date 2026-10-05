@@ -217,9 +217,9 @@ export function Hero() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             {/* Left Content */}
             <div className="text-primary-foreground lg:col-span-3">
-              <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-balance">
-                Stop Looking at That Plain Backyard!
-              </h1>
+  <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl text-[48px] font-bold leading-tight text-balance">
+                Backyard Upgarde?
+  </h1>
               <p className="mt-6 text-lg md:text-xl opacity-90 leading-relaxed max-w-xl">
                 Choose the Options you're looking for and see if your project fits the scope.
               </p>
@@ -255,10 +255,7 @@ export function Hero() {
                   <p className="font-[family-name:var(--font-poppins)] text-base md:text-lg font-extrabold text-foreground tracking-wide uppercase mb-2">
                     GET the BACKYARD MAKE OVER <span className="text-accent">you've had on your mind.</span>
                   </p>
-                  <h2 className="font-[family-name:var(--font-poppins)] text-lg font-bold text-foreground">
-                    <span className="text-accent">Not Every Home Qualifies.</span> Yours Might.
-                  </h2>
-                  <p className="mt-1 text-sm text-muted-foreground">
+                  <p className="mt-1 text-sm font-semibold text-muted-foreground">
                     Fill out the form below and we&apos;ll get in touch!
                   </p>
                 </div>
