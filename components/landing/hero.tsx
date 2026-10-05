@@ -218,24 +218,24 @@ export function Hero() {
             {/* Left Content */}
             <div className="text-primary-foreground lg:col-span-3">
               <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl text-[48px] font-bold leading-tight text-balance">
-                Backyard Upgarde?
+                Upgrade your space.
               </h1>
               <p className="mt-6 text-lg md:text-xl opacity-90 leading-relaxed max-w-xl">
-                Choose the Options you're looking for and see if your project fits the scope.
+                Choose the Options you&apos;re looking for
               </p>
 
               {/* Stats */}
               <div className="mt-8 grid grid-cols-3 gap-4">
                 <div>
-                  <div className="text-3xl font-bold text-accent">10+</div>
+                  <div className="text-3xl font-bold text-[#FFCE1C]">10+</div>
                   <div className="text-xs opacity-80">Years Experience</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-accent">100+</div>
+                  <div className="text-3xl font-bold text-[#FFCE1C]">100+</div>
                   <div className="text-xs opacity-80">Projects Completed</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-accent">5★</div>
+                  <div className="text-3xl font-bold text-[#FFCE1C]">5★</div>
                   <div className="text-xs opacity-80">Google Rating</div>
                 </div>
               </div>
