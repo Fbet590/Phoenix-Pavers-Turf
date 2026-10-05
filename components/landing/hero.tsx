@@ -223,13 +223,13 @@ export function Hero() {
   <img
   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/The%20Better%20Life%20Way%20Orange%20Blob%20Logo-Fwyp1vFTv8cfa0bZVNbkgUbTsatho8.png"
   alt="The Better Life Way"
-  className="mt-4 h-28 md:h-36 w-auto"
+  className="-mt-2 h-28 md:h-36 w-auto"
   />
               <button
                 type="button"
-                className="mt-4 inline-flex items-center rounded-full bg-white px-6 py-3 text-base md:text-lg font-semibold text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
+                className="mt-2 inline-flex items-center rounded-full bg-white px-6 py-1.5 text-base md:text-lg font-semibold text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
               >
-                Choose Your Options
+                CHOOSE YOUR OPTIONS
               </button>
 
               {/* Stats */}
