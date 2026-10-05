@@ -1,8 +1,14 @@
 import type { Metadata } from 'next'
-import { Montserrat, Playfair_Display, Poppins, Work_Sans } from 'next/font/google'
+import { Manrope, Montserrat, Playfair_Display, Poppins, Work_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import './globals.css'
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: '--font-manrope'
+});
 
 const montserrat = Montserrat({ 
   subsets: ["latin"],
@@ -81,7 +87,7 @@ export default function RootLayout({
           />
         </noscript>
       </head>
-      <body className={`${montserrat.variable} ${playfair.variable} ${poppins.variable} ${workSans.variable} font-sans antialiased`}>
+      <body className={`${manrope.variable} ${montserrat.variable} ${playfair.variable} ${poppins.variable} ${workSans.variable} font-sans antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
