@@ -225,12 +225,12 @@ export function Hero() {
   alt="The Better Life Way"
   className="-mt-2 h-28 md:h-36 w-auto"
   />
-              <button
-                type="button"
-                className="mt-2 inline-flex items-center rounded-full bg-white px-6 py-1.5 text-[20px] font-bold font-[family-name:var(--font-manrope)] text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
-              >
-                CHOOSE YOUR OPTIONS
-              </button>
+  <button
+  type="button"
+  className="mt-2 inline-flex items-center justify-center bg-[url('/images/yellow-banner-button.png')] bg-contain bg-center bg-no-repeat px-10 py-7 text-[20px] font-bold font-[family-name:var(--font-manrope)] text-black leading-relaxed transition-opacity hover:opacity-90"
+  >
+  CHOOSE YOUR OPTIONS
+  </button>
 
               {/* Stats */}
               <div className="mt-8 grid grid-cols-3 gap-4">
