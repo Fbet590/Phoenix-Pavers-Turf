@@ -217,25 +217,33 @@ export function Hero() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             {/* Left Content */}
             <div className="text-primary-foreground lg:col-span-3">
-              <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-balance">
-                Stop Looking at That Plain Backyard!
+              <h1 className="-mt-4 lg:-mt-8 font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl text-[48px] font-bold leading-tight text-balance">
+                Upgrade <span className="font-normal">your space</span>.
               </h1>
-              <p className="mt-6 text-lg md:text-xl opacity-90 leading-relaxed max-w-xl">
-                Choose the Options you're looking for and see if your project fits the scope.
-              </p>
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/The%20Better%20Life%20Way%20Orange%20Blob%20Logo-Fwyp1vFTv8cfa0bZVNbkgUbTsatho8.png"
+                alt="The Better Life Way"
+                className="mt-4 h-16 md:h-20 w-auto"
+              />
+              <button
+                type="button"
+                className="mt-4 inline-flex items-center rounded-full bg-white px-6 py-3 text-base md:text-lg font-semibold text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
+              >
+                Choose Your Options
+              </button>
 
               {/* Stats */}
               <div className="mt-8 grid grid-cols-3 gap-4">
                 <div>
-                  <div className="text-3xl font-bold text-accent">10+</div>
+                  <div className="text-3xl font-bold text-[#FFCE1C]">10+</div>
                   <div className="text-xs opacity-80">Years Experience</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-accent">100+</div>
+                  <div className="text-3xl font-bold text-[#FFCE1C]">100+</div>
                   <div className="text-xs opacity-80">Projects Completed</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-accent">5★</div>
+                  <div className="text-3xl font-bold text-[#FFCE1C]">5★</div>
                   <div className="text-xs opacity-80">Google Rating</div>
                 </div>
               </div>
@@ -253,12 +261,9 @@ export function Hero() {
                 {/* Form Header */}
                 <div className="text-center mb-5">
                   <p className="font-[family-name:var(--font-poppins)] text-base md:text-lg font-extrabold text-foreground tracking-wide uppercase mb-2">
-                    GET the BACKYARD MAKE OVER you've had on your mind.
+                    GET the BACKYARD MAKE OVER <span className="text-accent">you've had on your mind.</span>
                   </p>
-                  <h2 className="font-[family-name:var(--font-poppins)] text-lg font-bold text-foreground">
-                    <span className="text-accent">Not Every Home Qualifies.</span> Yours Might.
-                  </h2>
-                  <p className="mt-1 text-sm text-muted-foreground">
+                  <p className="mt-1 text-sm font-semibold text-muted-foreground">
                     Fill out the form below and we&apos;ll get in touch!
                   </p>
                 </div>
