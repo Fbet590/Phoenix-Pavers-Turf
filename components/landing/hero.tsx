@@ -230,9 +230,9 @@ export function Hero() {
   onClick={() => {
     document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth", block: "start" })
   }}
-  className="mt-2 inline-flex items-center justify-center bg-[url('/images/yellow-banner-button.png')] bg-contain bg-center bg-no-repeat px-10 py-7 text-[20px] font-bold font-[family-name:var(--font-manrope)] text-black leading-relaxed transition-opacity hover:opacity-90"
-  >
-  CHOOSE YOUR OPTIONS
+              className="mt-2 inline-flex items-center justify-center whitespace-nowrap bg-[url('/images/yellow-banner-button.png')] bg-[length:100%_100%] bg-center bg-no-repeat px-8 py-5 text-sm md:px-10 md:py-7 md:text-[20px] font-bold font-[family-name:var(--font-manrope)] text-black leading-relaxed transition-opacity hover:opacity-90"
+            >
+              CHOOSE YOUR OPTIONS
   </button>
 
               {/* Stats */}
