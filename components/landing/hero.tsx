@@ -229,7 +229,7 @@ export function Hero() {
                 type="button"
                 className="mt-2 inline-flex items-center rounded-full bg-white px-6 py-1.5 text-base md:text-lg font-semibold text-primary leading-relaxed shadow-md hover:bg-white/90 transition-colors"
               >
-                Choose Your Options
+                CHOOSE YOUR OPTIONS
               </button>
 
               {/* Stats */}
