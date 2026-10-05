@@ -217,9 +217,9 @@ export function Hero() {
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             {/* Left Content */}
             <div className="text-primary-foreground lg:col-span-3">
-  <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl text-[48px] font-bold leading-tight text-balance">
+              <h1 className="font-[family-name:var(--font-poppins)] text-3xl md:text-4xl lg:text-5xl text-[48px] font-bold leading-tight text-balance">
                 Backyard Upgarde?
-  </h1>
+              </h1>
               <p className="mt-6 text-lg md:text-xl opacity-90 leading-relaxed max-w-xl">
                 Choose the Options you're looking for and see if your project fits the scope.
               </p>
